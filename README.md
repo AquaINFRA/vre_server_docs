@@ -15,7 +15,7 @@ So this documentation covers:
 * Which static input data has to be present
 * Deploying the various AquaINFRA tools
 * Server to serve the static result files, and to serve some example files
-* A cronjob to regularly remove old results
+* [A cronjob to regularly remove old results](deletion_cronjob.md)
 * TODO: Ansible playbook to automate deployment
 
 
