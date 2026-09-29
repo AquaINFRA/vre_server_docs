@@ -68,10 +68,12 @@ echo $(date)" Deleting..." >> /opt/remove_old_outputs_$(${NOWTODAY}).log
 ```
 
 * This runs the actual deletion (using `find ... -delete`), while also confirming each deletion (using `-print`):
+
 ```
 find /var/www/nginx/download/out -type f -mtime +90 -print -delete >> /opt/remove_old_outputs_$(${NOWTODAY}).log
+```
 
-* And then the same for (empty) directories (using `find ... -type d -empty`)
+* And then the same for (empty) directories (using `find ... -type d -empty`) ...
 
 
 ## Example log output
